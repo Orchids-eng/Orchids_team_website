@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orchids team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            overflow-x: hidden;
+            color: #fff;
+            text-align: center; 
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            padding: 20px;
+        }
+
+        header .logo {
+            width:100px;
+        }
+
+        header h1 {
+            margin: 10px 0;
+        }
+
+        .contact-button {
+            background: #f39c12;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .contact-button:hover {
+            background: #e67e22;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #f39c12;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .designs-gallery {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+
+        .designs-gallery img {
+            width: 200px;
+            height: auto;
+            border: 2px solid #f39d1231;
+            border-radius: 25px;
+            scroll-snap-align: center;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .designs-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-icons {
+            font-size: 24px;
+        }
+
+        .contact-icons a {
+            margin: 0 10px;
+        }
+
+        .contact-button-center {
+            display: inline-block;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .spacer {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <video autoplay muted loop>
+            <source src="BACKGROND-VIDEO\zero-two-sad.3840x2160.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header class="animate__animated animate__fadeInDown">
+        <img src="image/LOGO.png" alt="شعار الفريق" class="logo">
+        <h1>Orchids team</h1>
+    </header>
+    <main class="animate__animated animate__fadeInUp">
+        <section id="about">
+            <h2>من نحن</h2>
+            <p>نحن فريق Orchids، فريق متميز بابتكاراته في مجالات التقنية والمنافسات.</p>
+            <div class="contact-button-center">
+                <a href="#contact" class="contact-button">تواصل معنا</a>
+            </div>
+        </section>
+        <section id="founder">
+            <h2>مؤسس الفريق</h2>
+            <p>Safae بمساعدة Najat</p>
+        </section>
+        <section id="goals">
+            <h2>أهداف الفريق</h2>
+            <p>- الحصول على تصنيف كفريق رسمي.</p>
+            <p>- مكان آمن للفتيات.</p>
+            <p>- مكان ممتع يمكنك فيه مشاركة أوقات رائعة مع أصدقاء مدهشين.</p>
+            <p>- تعلم أساسيات التصميم وتعليم الأعضاء الآخرين لتحسين جودة التصاميم.</p>
+        </section>
+        <section id="leaders">
+            <h2>القادة الحاليون للفريق</h2>
+            <p>Safae كقائدة أولى.</p>
+            <p>Najat كقائدة ثانية.</p>
+        </section>
+        <section id="designs">
+            <h2>تصاميم الفريق</h2>
+            <div class="designs-gallery">
+                <img src="image\photo_1_2024-07-20_19-14-09.jpg" alt="تصميم 1" class="animate__animated animate__zoomIn">
+                <img src="/image/photo_2_2024-07-20_19-14-09.jpg" alt="تصميم 2" class="animate__animated animate__zoomIn">
+                <img src="/image/photo_3_2024-07-20_19-14-09.jpg" alt="تصميم 3" class="animate__animated animate__zoomIn">
+                <img src="/image/photo_4_2024-07-20_19-14-09.jpg" alt="تصميم 4" class="animate__animated animate__zoomIn">
+                <img src="/image/photo_5_2024-07-20_19-14-09.jpg" alt="تصميم 5" class="animate__animated animate__zoomIn">
+            </div>
+        </section>
+        <section id="achievements">
+            <h2>إنجازات الفريق</h2>
+            <p>لا يوجد إنجازات حالياً.</p>
+        </section>
+        <section id="contact">
+            <h2>تواصل معنا</h2>
+            <p>التواصل مع الفريق عبر:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/orchidsanimepower" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61552010645608&mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer class="animate__animated animate__fadeInUp">
+        <p>&copy; 2024 فريق Orchids. جميع الحقوق محفوظة. برمجة وتصميم <a href="https://bio.link/msalihal" target="_blank">Mohammed Salah</a></p>
+    </footer>
+</body>
+</html>
